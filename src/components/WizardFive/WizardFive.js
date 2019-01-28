@@ -14,7 +14,7 @@ class WizardFive extends Component {
                         <Link to='/wSix'>
                             <button
                                 onClick={() =>
-                                    this.props.updateRealEstateAgent(true)
+                                    this.props.updateRealEstateAgent('true')
                                 }>
                                 Yes
                             </button>
@@ -22,7 +22,7 @@ class WizardFive extends Component {
                         <Link to='/wSix'>
                             <button
                                 onClick={() =>
-                                    this.props.updateRealEstateAgent(false)
+                                    this.props.updateRealEstateAgent('false')
                                 }>
                                 No{' '}
                             </button>

@@ -181,7 +181,7 @@ function reducer(state = initalState, action) {
         case UPDATE_REAL_ESTATE_AGENT:
             return {
                 ...state,
-                agent: action.payload,
+                realEstateAgent: action.payload,
             }
 
         case UPDATE_COST:
