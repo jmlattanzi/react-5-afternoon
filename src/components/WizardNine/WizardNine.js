@@ -16,17 +16,23 @@ class WizardNine extends Component {
                     <input
                         type='text'
                         placeholder='Line One'
-                        onChange={this.props.updateAddLineOne}
+                        onChange={(e) =>
+                            this.props.updateAddressOne(e.target.value)
+                        }
                     />
                     <input
                         type='text'
                         placeholder='Line Two'
-                        onChange={this.props.updateAddLineTwo}
+                        onChange={(e) =>
+                            this.props.updateAddressTwo(e.target.value)
+                        }
                     />
                     <input
                         type='text'
                         placeholder='Line Three'
-                        onChange={this.props.updateAddLineThree}
+                        onChange={(e) =>
+                            this.props.updateAddressThree(e.target.value)
+                        }
                     />
                     <Link to='/wTen'>
                         <button className='margin-btn'> Next </button>

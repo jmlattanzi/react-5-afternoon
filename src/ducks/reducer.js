@@ -157,7 +157,7 @@ function reducer(state = initalState, action) {
         case UPDATE_PROPERTY_TYPE:
             return {
                 ...state,
-                propertyType: action.paylaod,
+                propertyType: action.payload,
             }
 
         case UPDATE_CITY:
@@ -169,7 +169,7 @@ function reducer(state = initalState, action) {
         case UPDATE_PROP:
             return {
                 ...state,
-                props: action.payload,
+                propToBeUsedOn: action.payload,
             }
 
         case UPDATE_FOUND:
@@ -236,6 +236,12 @@ function reducer(state = initalState, action) {
             return {
                 ...state,
                 lastName: action.payload,
+            }
+
+        case UPDATE_EMAIL:
+            return {
+                ...state,
+                email: action.payload,
             }
 
         default:
